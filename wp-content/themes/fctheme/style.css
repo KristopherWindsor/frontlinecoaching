@@ -1,0 +1,157 @@
+@font-face {
+	font-family: CabinRegular;
+	src: url("/wp-content/themes/fctheme/assets/cabin/Cabin-Regular.otf") format("opentype"),
+		url("/wp-content/themes/fctheme/assets/cabin/cabin-regular-webfont.ttf") format("truetype"),
+		url("/wp-content/themes/fctheme/assets/cabin/cabin-regular-webfont.eot") format('embedded-opentype');
+}
+
+body, html {margin: 0; padding: 0; width: 100%; height: 100%; font-family: "CabinRegular", serif; background: #404040; -webkit-text-size-adjust: none;}
+
+header {min-width: 980px; margin: 0 auto; padding: 0 150px;height: 75px; background: #303030; border-bottom: 1px solid #fff;}
+header > div {width: 980px; height: 75px; margin: 0 auto;}
+header img {float: left; position: relative; left: -5px; top: 1px;}
+header .menu {float: right; height: 75px;}
+header .menu ul {list-style-type: none; margin: 25px 28px 10px 0; line-height: 40px;}
+header .menu li {display: inline-block; margin-left: 35px;}
+header .menu a {line-height: 40px; color: #fff; text-decoration: none; font-size: 18px; transition-duration: 0.05s; height: 40px; float: left;}
+header .menu a:hover, header .menu a:active {text-decoration: none; color: #fff;}
+header .menu a:hover {font-size: 21px;}
+header .menu .current_page_item a {color: #20a5d3;}
+
+/* footer width and borders tbd */
+footer {min-width: 980px; margin: 0 auto; padding: 0 150px; height: 50px; line-height: 50px; background: #303030; text-align: center; border-top: 1px solid #fff;}
+footer ul {list-style-type: none; height: 50px; line-height: 50px; margin: 0; padding: 0;}
+footer li {color: #fff; display: inline; font-size: 14px;}
+footer li + li:before {content: " | ";}
+footer li + li:last-child:before {content: "\2022"; margin: 0 15px;}
+footer a {text-decoration: none; color: #fff;}
+footer a:hover {color: #20a5d3;}
+
+#main {width: 1280px; margin: 0 auto;}
+#fullscreenpopup {display: none; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, .5); top: 0; left: 0; position: fixed;}
+#fullscreenpopup iframe {position: absolute; left: 50%; top: 50%; margin-left: -280px; margin-top: -157px;}
+
+/** home page **/
+
+#splash {position: relative; overflow: hidden; width: 1280px; height: 420px;}
+#splash > div {position: absolute; top: 0; left: 1280px; width: 1280px; height: 420px;}
+#splash > div:first-child {left: 0;}
+
+#mc_embed_signup {width: 980px; height: 50px; background: #fff; padding: 0 150px;}
+#mc_embed_signup label {display: block; float: left; line-height: 50px; font-size: 18px;}
+#mc_embed_signup input[type=email] {margin: 11px 20px 9px; border: 1px solid black; line-height: 28px; height: 28px; font-size: 11px; padding: 0 12px; width: 215px; display: block; float: left;}
+#mc_embed_signup div:last-child {display: block; float: left; height: 50px; line-height: 50px;}
+#mc_embed_signup input[type=submit] {display: block; border: none; height: 30px; font-size: 19px; line-height: 30px; border-radius: 8px; background: #a8a8a8; width: 128px; margin: 11px 0 9px; font-family: "CabinRegular", serif; color: #303030;}
+
+/** css specific to individual heros **/
+
+#herofr {background: url("/wp-content/themes/fctheme/images/hero/featured-fully-resourced.png") 0 0;}
+#herofr > * {position: absolute;}
+#herofr > h1 {top: 70px; left: 233px; color: #fff; font-weight: normal; margin: 0; font-size: 80px; line-height: 80px;}
+#herofr > h2 {top: 175px; left: 233px; color: #fff; font-weight: normal; margin: 0; font-size: 36px; line-height: 36px;}
+#herofr > h3 {top: 237px; left: 233px; color: #fff; font-weight: normal; margin: 0; font-size: 21px; line-height: 21px;}
+#herofr > a {background: #ffbf28; border-radius: 10px; color: #303030; font-size: 25px; left: 233px; line-height: 34px; padding-bottom: 3px; text-align: center; text-decoration: none; top: 318px; width: 188px;}
+#herofr > a:hover {background-color: #ca9821;}
+
+#herolaunch > * {position: absolute;}
+#herolaunch > img {top: 83px; left: 770px;}
+#herolaunch > h2 {color: #20a5d3; font-size: 95px; font-weight: normal; left: 250px; line-height: 94px; margin: 0; top: 45px; width: 1280px;}
+#herolaunch > h3 {color: #fff; font-weight: normal; font-size: 35px; left: 252px; line-height: 42px; margin: 0; top: 234px; width: 1280px;}
+#herolaunch > a {background: #ffbf28; border-radius: 10px; color: #303030; font-size: 25px; left: 251px; line-height: 34px; padding-bottom: 3px; text-align: center; text-decoration: none; top: 354px; width: 159px;}
+#herolaunch > a:hover {background-color: #ca9821;}
+
+#herotestimonial {background: url("/wp-content/themes/fctheme/images/hero/testimonial.png") 0 0;}
+#herotestimonial p {color: #fff; position: absolute; margin: 0; padding: 0; top: 65px; left: 355px; font-size: 27.5px; line-height: 33px;}
+#herotestimonial .bold {color: black; font-size: 33.5px; font-weight: bold; line-height: 40px;}
+#herotestimonial .signature {color: black; position: absolute; top: 355px; left: 481px; font-size: 19.5px; font-weight: bold; line-height: 24px;}
+
+#heroresource {background: url("/wp-content/themes/fctheme/images/hero/featured-resource-bg.png") 0 0;}
+#heroresource > * {position: absolute;}
+#heroresource > a {top: 100px; left: 217px; display: block; width: 394px; height: 220px; overflow: hidden;}
+#heroresource > a:after {position: absolute; content: url("/wp-content/themes/fctheme/images/play.png"); left: 152px; top: 65px; opacity: .5; transition-duration: 0.2s;}
+#heroresource > a:hover:after {opacity: 1;}
+#heroresource > a img {width: 394px; top: -37px; position: relative;}
+#heroresource > h1 {top: 87px; left: 700px; color: #fff; font-weight: normal; margin: 0; font-size: 95px; line-height: 95px;}
+#heroresource > h2 {top: 290px; left: 700px; color: #000; font-weight: normal; margin: 0; font-size: 35px; line-height: 35px;}
+#heroresource > h1.twoline {line-height: 85px;}
+#heroresource > h2.twoline {top: 265px; font-size: 35px; line-height: 42px;}
+
+/** resources **/
+
+.resources {width: 980px; padding: 0 150px 5px 150px; background: #c0c0c0;}
+.resources h2 {color: #404040; font-size: 23px; padding: 20px 0 0 0; margin: 0; line-height: 27px; font-weight: normal;}
+
+.resources-content {display: inline-block; margin: 20px; width: 278px; height: 150px; position: relative; overflow: overflow;}
+.resources-content:after {position: absolute; width: 278px; height: 150px; content: ""; opacity: .4; transition-delay: 0.2s; background: url("/wp-content/themes/fctheme/images/play.png") no-repeat scroll center center #808080;}
+.resources-content:hover:after {background-color: transparent; opacity: 1; transition-delay: 0s;}
+
+.resources-content > img, .resources-content > div {position: absolute; width: 278px; height: 150px; transition-duration: 0.2s; transition-timing-function: ease; left: 0; top: 0; overflow: hidden;}
+.resources-content:hover > img, .resources-content:hover > div {width: 318px; height: 172px; left: -20px; top: -11px;}
+.resources-content > div > img {width: 100%; position: absolute; top: -30px;}
+.resources-content span {position: absolute; left: 24px; bottom: 13px; color: #fff; font-size: 20px; line-height: 25px; transition-duration: 0.2s; overflow: hidden; max-width: 243px; text-overflow: ellipsis; white-space: nowrap;}
+.resources-content:hover span {left: 4px; bottom: 2px; max-width: 283px;}
+
+.page-content .resources {width: auto; padding: 0 0 5px 60px; background: transparent;}
+.page-content .resources h3 {padding: 0;}
+.page-content .resources-content {margin: 10px;}
+
+/** pages in general **/
+
+.page-content {margin: 0 150px; background: #fff; border-left: 1px solid #fff; border-right: 1px solid #fff; position: relative; padding: 0 0 40px;}
+.page-header {padding: 0 60px;}
+.page-header h1 {line-height: 58px; font-size: 58px; font-weight: normal; margin: 0; padding: 40px 0 0 0; color: #20a5d3;}
+.page-header h1:last-child {padding-bottom: 20px;}
+.page-header h2 {line-height: 24px; font-size: 20px; font-weight: normal; margin: 0; padding: 1px 0 18px 0; color: #fff;}
+.page-content > p, .page-content h3, .page-content ul {padding: 0 0 0 60px; font-size: 14px; line-height: 20px; margin: 10px 0 5px 0;}
+.page-content > p {}
+.page-content h3 {font-size: 22px; line-height: 34px; color: #20a5d3; font-weight: normal;}
+.page-content p + h3, .page-content ul + h3 {margin: 15px 0 0 0;}
+.page-content h3 + p, .page-content h3 + ul {margin: 5px 0 5px 0;}
+.page-content ul {list-style-type: none; margin: 0;}
+.page-content li {margin: 0 0 4px 0; padding: 0;}
+.page-content li:before {content: "·"; font-size: 20px; margin: 0 5px 0 30px; line-height: 20px; position: relative; top: 1px;}
+
+/** sidebar and its contents **/
+
+.sidebar {width: 280px; float: right; margin: 18px 25px 50px 72px;}
+.sidebar > div + div, .sidebar > div + a, .sidebar a + a {margin-top: 42px;}
+.sidebar > a {outline: 0;}
+.sidebar-video {width: 280px; height: 160px; display: block; position: relative; text-align: center; vertical-align: bottom;}
+.sidebar-video:after {position: absolute; content: url("/wp-content/themes/fctheme/images/play.png"); left: 95px; top: 35px; opacity: .5; transition-duration: 0.2s;}
+.sidebar-video:hover:after {opacity: 1;}
+.sidebar-video.vid-launch-intro {background: url("http://img.youtube.com/vi/QSefiO5946E/0.jpg") repeat scroll center center / 100% auto rgba(0, 0, 0, 0); }
+.sidebar-video.vid-fc-intro {background: url("http://img.youtube.com/vi/_vft3HOqOoI/0.jpg") repeat scroll center center / 100% auto rgba(0, 0, 0, 0); }
+.sidebar-launch {width: 252px; height: 124px; border-radius: 22px; padding-left: 28px; position: relative; display: block; text-decoration: none;}
+.sidebar-launch > div:first-child {color: #20a5d3; font-size: 30px; line-height: 33px; padding-top: 10px;}
+.sidebar-launch > div:last-child {color: #fff; font-size: 14px; line-height: 16px; padding-top: 4px;}
+.sidebar-launch:after {position: absolute; content: url("/wp-content/themes/fctheme/images/power68px.png"); top: 22px; right: 38px;}
+.sidebar-signupnow {background: #ffbf28; border-radius: 12px; color: #303030; font-size: 25px; line-height: 34px; padding-bottom: 3px; text-align: center; text-decoration: none; width: 100%; display: block;} /* orange button appears only twice on site, different border-radius */
+.sidebar-signupnow:hover {background-color: #ca9821;}
+
+/** about page **/
+
+.page-content > p:not(.about-pic) + p.about-pic {margin-top: 16px;}
+.about-pic img {display: inline-block; width: 186px;}
+.about-pic span {display: inline-block; padding: 0 0 8px 10px; vertical-align: bottom;}
+
+/** launch page **/
+.launch-header:after {background-image: url("/wp-content/themes/fctheme/images/power72px.png"); position: absolute; top: 47px; left: 495px; background-size: 72px 72px; width: 72px; height: 72px; content: "";}
+#launch-application-container {padding: 0 60px; margin: 60px 0 0 0; display: none;}
+#launch-application-container iframe {height: 1000px;}
+
+/** generic classes **/
+
+.graydient {
+	background: rgb(64,64,64); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(64,64,64,1) 0%, rgba(48,48,48,1) 25%, rgba(48,48,48,1) 75%, rgba(64,64,64,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,1)), color-stop(25%,rgba(48,48,48,1)), color-stop(75%,rgba(48,48,48,1)), color-stop(100%,rgba(64,64,64,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(48,48,48,1) 25%,rgba(48,48,48,1) 75%,rgba(64,64,64,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(48,48,48,1) 25%,rgba(48,48,48,1) 75%,rgba(64,64,64,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(48,48,48,1) 25%,rgba(48,48,48,1) 75%,rgba(64,64,64,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(64,64,64,1) 0%,rgba(48,48,48,1) 25%,rgba(48,48,48,1) 75%,rgba(64,64,64,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#404040',GradientType=0 ); /* IE6-9 */
+}
+
+.noscrape-address:before {content: "Murphy Ave";}
+.noscrape-phone:before {content: "0";}
+.noscrape-email:before {content: "@frontlinecoaching.org";}
